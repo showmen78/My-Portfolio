@@ -1,4 +1,5 @@
-
+import "../mobile.css";
+import "../desktop.css";
 function Navbar(){
 
     return <div className="navbar">

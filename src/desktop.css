@@ -19,7 +19,7 @@
     flex-direction: wrap row;
     color:white;
     justify-content: center;
-    z-index: 2;
+    z-index: 20;
 
 }
 .left-child{
@@ -57,21 +57,31 @@
 
 /* .......................................intro starts ......................................... */
 .intro{
-    background-color:red;
+   
     position:relative;
     top: calc(15vh);
     min-height: 100vh;
     height: fit-content;
     
     /* background-image: url("https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png"); */
-    background-image: url("https://images.unsplash.com/photo-1578091879915-33ee869e2cd7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
-    background-size: cover;
+    /* background-image: url("https://images.unsplash.com/photo-1578091879915-33ee869e2cd7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"); */
+    /* background-size: cover;
     background-position: center;
-    background-color: gray;
-    background-repeat: no-repeat;
-    text-align: center;
+    
+    background-repeat: no-repeat; */
+    background-color: gray; 
+     text-align: center;
+
+    
    
    
+}
+.intro-bg-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
 }
 .introduction {
     height: fit-content;
@@ -97,7 +107,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+    padding-top: 2rem;
   
 
 }
@@ -200,12 +210,29 @@
 /* ........................................services ends ...................................... */
 
 /* ........................................testimonial  starts ...................................... */
+.testimonial-class{
+    background-color: cyan;
+    height: fit-content;
+    z-index: -1;
+    position: relative;
+    padding-bottom: 2vh;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: cyan;
+}
+.testimonial-bg-video{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
 .carosole{
     margin:10px auto 0 auto;
     padding: 20px auto;
     min-height: 100vh;
-   background-color: cyan;
-   background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882");
+   /* background-color: red; */
+   /* background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882"); */
    /* background-image: url("https://i.gifer.com/QlQV.gif"); */
    /* background-image: url("https://media.giphy.com/media/ZnzvtO1F8GawpqgkMj/giphy-downsized-large.gif"); */
    background-repeat:round;
@@ -215,14 +242,16 @@
     align-content: center;
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 .testimonials{
    margin: 25vh auto;
-    background-color: rgba(34, 30, 30, 0);
-    width: 50%;
+    background-color: rgba(0, 255, 255, 0);
+    width: 60%;
+    /* height: 70vh; */
     /* height: 50vh; */
     text-align: center;
-    color:rgb(255, 246, 255);
+    color:cyan;
     border-radius: 20px;
 }
 .testimonials img{
@@ -234,17 +263,28 @@
 }
 
 .testimonial-description{
-    padding: 10px 20px;
+    padding: 10px 20px auto 10px;
     word-break: normal;
 }
 /* ........................................testimonial ends ...................................... */
 
 /* ........................................contact starts ...................................... */
+.bg-video{
+
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+    
+
+}
 .contact{
+    background-color: green;
    display: flex;
    min-height: 100vh;
   align-items: center;
-  background-image: url("https://wallpaperaccess.com/full/537069.jpg");
+  /* background-image: url("https://wallpaperaccess.com/full/537069.jpg"); */
   background-size: cover;
   color:white ;
 
@@ -252,12 +292,13 @@
 .left-form{
     color:white;
     width: 50vw;
-    
+    z-index: 2;
     margin:10vh 5vw;
 }
 .right-form{
     width: 50vw;
     margin:10vh 5vw;
+    z-index: 2;
 }
 .left-form p{
     color:white;

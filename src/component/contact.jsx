@@ -25,20 +25,24 @@ function Contact(){
   // *************************************************
    function sendMail(e){
     e.preventDefault();
-    // if(e.target[0].value === ""){ e.target[0].placeholder="please enter an email"; return ;}
-    // if(e.target[1].value === ""){e.target[1].placeholder="please enter your Name";return ;}
+    if(e.target[0].value === ""){ e.target[0].placeholder="please enter an email"; return ;}
+    if(e.target[1].value === ""){e.target[1].placeholder="please enter your Name";return ;}
     // if(e.target[2].value === ""){e.target[2].placeholder="please enter your message";return ;}
 
     
     // emailjs.sendForm('newgmail', 'portfolio@template', e.target, 'user_z4JfQBxPJHa2Em3sKbaPh')
+    try{
     emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_MAILTEMPLATE, e.target, process.env.REACT_APP_USERID)
-      
+     
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-      e.target.reset();
+      e.target.reset();}catch(err){
+        // console.log(err);
+        alert("Something went wrong " + err);
+      }
    }
 
     return <div id="Hire" className="contact-background">

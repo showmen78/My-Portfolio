@@ -1,7 +1,7 @@
 import "../desktop.css";
 import "../mobile.css";
 import Typical from 'react-typical'
-import Particles from "./particles"
+// import Particles from "./particles"
 import Forest from "../video/Forest.mp4";
 function Intro(){
 

@@ -3,6 +3,7 @@ import "../desktop.css"
 import Carousel from "react-bootstrap/Carousel";
 import CarosoleItem from "./carosole_item";
 import RainVideo from "../video/rain.mp4";
+import {testimonials} from "../script";
 function Testimonials(){
 
     return    <div className="testimonial-class" >
@@ -11,17 +12,23 @@ function Testimonials(){
           
     <Carousel.Item interval={2000}>
         <CarosoleItem
-        image={"https://static.remove.bg/remove-bg-web/417fd4161b5795da2323e66af38c4afd2f7ee3ae/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png"}
+        name={testimonials[0].name}
+        image={testimonials[0].image}
+        message={testimonials[0].message}
         />
     </Carousel.Item>
     <Carousel.Item interval={2000}>
     <CarosoleItem
-        image={"https://static.remove.bg/remove-bg-web/417fd4161b5795da2323e66af38c4afd2f7ee3ae/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png"}
+        name={testimonials[1].name}
+        image={testimonials[1].image}
+        message={testimonials[1].message}
         />
     </Carousel.Item>
     <Carousel.Item interval={2000}>
     <CarosoleItem
-        image={"https://static.remove.bg/remove-bg-web/417fd4161b5795da2323e66af38c4afd2f7ee3ae/assets/start_remove-79a4598a05a77ca999df1dcb434160994b6fde2c3e9101984fb1be0f16d0a74e.png"}
+        name={testimonials[2].name}
+        image={testimonials[2].image}
+        message={testimonials[2].message}
         />
     </Carousel.Item>
   </Carousel>

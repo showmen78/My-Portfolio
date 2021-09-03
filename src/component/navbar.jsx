@@ -20,7 +20,7 @@ function Navbar(){
     }
  
     return  <div className="navbar">
-     <div  className="left-child"> <h1> Showmen</h1></div>
+     <div  className="left-child"> <h1> <span className="brand">Showmen</span></h1></div>
 
      { (isDesktop)?<div className="right-child">
      

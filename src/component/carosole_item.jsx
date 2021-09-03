@@ -10,15 +10,10 @@ function CarosoleItem(props){
     alt="client "
     />
     <div className="testimonial-description">
-        <h2> Showmen Dey</h2>
-        <p> sdfj lsa djflk js sdfjs dfj dsfjk dsfj df sadkfj dsfjsda f waerw adfjs 
-            dfjkjasdf dkfj askdfj wej dsfsdf sdafi wrj sdfjsdf werujs dfnfds 
-            sdjfjsdfk ewjj dfjdf we  spowe sdf sdfdfsdf
-            sdfjsadfjlksajdflkjasdflkjsaldkfjlksajdflkjsadf
-            dlfjlsadkfjl;ksajdfl;kjsadflkjsadlf;kjl;sakdjfl;ksajdflsdfjslkdjf
-            sdfjsadfjlksajdflkjasdflkjsaldkfjlksajdflkjsadfdfjlsdkfjlk
+        <h2> {props.name}</h2>
+        <p> {props.message} </p>
          
-        </p>
+        
     </div>
     
     </div> 

@@ -6,6 +6,7 @@ import Services from "./component/services";
 import Testimonials from "./component/testimonial";
 import Contact from "./component/contact";
 import Footer from "./component/footer"
+import ProjectCardContainer from "./component/project_file_container";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Intro/>
       <About/>
       <Services/>
+      <ProjectCardContainer/>
       <Testimonials/>
       <Contact/>
       <Footer/>
